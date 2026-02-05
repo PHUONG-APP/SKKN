@@ -9,7 +9,8 @@ export const initializeGeminiChat = (apiKey: string) => {
   
   // Use gemini-3-pro-preview for complex reasoning and creative writing tasks
   chatSession = ai.chats.create({
-    model: 'gemini-3-pro-preview',
+    model: 'gemini-1.5-flash',
+    // model: 'gemini-3-pro-preview',
     config: {
       systemInstruction: SYSTEM_INSTRUCTION,
       temperature: 0.7,
