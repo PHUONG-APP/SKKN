@@ -17,7 +17,7 @@ export const initializeGeminiChat = (apiKey: string) => {
       topK: 64,
       topP: 0.95,
       // Removed maxOutputTokens to prevent potential blocking and allow model flexibility
-      thinkingConfig: { thinkingBudget: 2048 } 
+      //thinkingConfig: { thinkingBudget: 2048 } 
     },
   });
   return chatSession;
